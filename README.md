@@ -4,7 +4,7 @@ A simple Chrome extension to control video playback speed and navigation on **Bi
 
 ## Why I Made This
 
-While studying for exams, I found it annoying to deal with limited playback controls when watching university lectures. This extension fixes that problem by adding speed control and keyboard shortcuts.
+While studying for exams, I found it annoying to deal with limited playback controls when watching university lectures and also I couldn't easily pause the video by pressing space bar. This extension fixes that problem by adding speed control and keyboard shortcuts.
 
 ## Features
 
@@ -26,6 +26,7 @@ While studying for exams, I found it annoying to deal with limited playback cont
 1. Open the extension from the toolbar.
 2. Use the buttons to adjust speed or enable keyboard shortcuts.
 3. Control videos on supported platforms like BigBlueButton.
+4. By Enabling "Control Keys" you can now control playback by arrow keys and play/pause by space key
 
 ---
 
