@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "BigBlue Control",
+    "version": "1.0",
+    "description": "Control playback in BigBlue",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
+  
