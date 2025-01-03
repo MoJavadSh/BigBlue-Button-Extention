@@ -7,6 +7,7 @@ infoIcon.addEventListener('click', () => {
   mainPage.style.display = 'none';
   infoPage.style.display = 'block';
 });
+document.getElementById('info-icon').style.display = 'none';
 
 backBtn.addEventListener('click', () => {
   infoPage.style.display = 'none';
