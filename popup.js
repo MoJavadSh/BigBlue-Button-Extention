@@ -1,29 +1,33 @@
-const infoIcon = document.getElementById('info-icon');
-const infoPage = document.getElementById('info-page');
-const mainPage = document.getElementById('main-page');
-const backBtn = document.getElementById('back-btn');
+const infoIcon = document.getElementById("info-icon");
+const infoPage = document.getElementById("info-page");
+const mainPage = document.getElementById("main-page");
+const backBtn = document.getElementById("back-btn");
 
-infoIcon.addEventListener('click', () => {
-  mainPage.style.display = 'none';
-  infoPage.style.display = 'block';
+infoIcon.addEventListener("click", () => {
+  mainPage.style.display = "none";
+  infoPage.style.display = "block";
+  infoIcon.style.display = "none";
 });
-document.getElementById('info-icon').style.display = 'none';
 
-backBtn.addEventListener('click', () => {
-  infoPage.style.display = 'none';
-  mainPage.style.display = 'block';
+backBtn.addEventListener("click", () => {
+  infoPage.style.display = "none";
+  mainPage.style.display = "block";
+  infoIcon.style.display = "block";
 });
 
 function executeScript(code) {
   chrome.tabs.executeScript({ code }, () => {
     if (chrome.runtime.lastError) {
-      console.error('Error executing script:', chrome.runtime.lastError.message);
+      console.error(
+        "Error executing script:",
+        chrome.runtime.lastError.message
+      );
     }
   });
 }
 
 // 2x
-document.getElementById('btn-2x').addEventListener('click', () => {
+document.getElementById("btn-2x").addEventListener("click", () => {
   const code = `
     document.querySelectorAll('video').forEach(video => {
       video.playbackRate = 2.5;
@@ -33,7 +37,7 @@ document.getElementById('btn-2x').addEventListener('click', () => {
 });
 
 //  3x
-document.getElementById('btn-3x').addEventListener('click', () => {
+document.getElementById("btn-3x").addEventListener("click", () => {
   const code = `
     document.querySelectorAll('video').forEach(video => {
       video.playbackRate = 3;
@@ -43,7 +47,7 @@ document.getElementById('btn-3x').addEventListener('click', () => {
 });
 
 // Controls
-document.getElementById('btn-control-keys').addEventListener('click', () => {
+document.getElementById("btn-control-keys").addEventListener("click", () => {
   const code = `
     document.addEventListener('keydown', (event) => {
       const video = document.querySelector('video');
