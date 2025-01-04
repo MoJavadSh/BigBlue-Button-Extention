@@ -1,120 +1,125 @@
 body {
-    font-family: Arial, sans-serif;
-    padding: 15px;
-    background-color: #1c1c1c; 
-    color: #ffffff;
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  h1 {
-    color: #ffa500; 
-    font-size: 22px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-  }
-  
-  button {
-    display: inline-block;
-    margin: 8px 5px;
-    padding: 10px 0;
-    width: 110px;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #ffa500; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #ff8c00; 
-  }
-  
-  button:active {
-    background-color: #e67e00; 
-  }
-  
-  footer {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #888;
-  }
-  
-  footer a {
-    color: #ffa500; 
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
-  #info-icon {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 15px;
-    height: 15px;
-    background-color: #ffa500; 
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #info-icon:hover {
-    background-color: #ff8c00; 
-  }
-  
-  #info-icon span {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  #info-page {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1c1c1c; 
-    padding: 15px;
-    box-sizing: border-box;
-  }
-  
-  #info-page h2 {
-    color: #ffa500; 
-    margin-bottom: 10px;
-    white-space: nowrap;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
 
-  }
-  
-  #info-page p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  #back-btn {
-    display: inline-block;
-    margin-bottom: 15px;
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #ffa500; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #back-btn:hover {
-    background-color: #ff8c00; 
-  }
+h1 {
+  color: #ffa500;
+  font-size: 22px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+}
+
+button {
+  display: inline-block;
+  margin: 8px 5px;
+  padding: 10px 0;
+  width: 110px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff8c00;
+}
+
+button:active {
+  background-color: #e67e00;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+footer a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#info-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#info-icon:hover {
+  background-color: #ff8c00;
+}
+
+#info-icon span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#info-container {
+  display: flex;
+  min-width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-page {
+  display: none;
+  min-width: 100%;
+  margin: 0 120px;
+}
+
+#info-page h2 {
+  color: #ffa500;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+#info-page li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#info-page p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#back-btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-btn:hover {
+  background-color: #ff8c00;
+}
